@@ -1,0 +1,329 @@
+<html>
+<head>
+
+<style type="text/css">
+header {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+   }
+footer{
+
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+	text-align: center;
+   }
+
+header2{
+    
+    color: white;
+    background-color: black;
+    clear: left;
+	text-align: right;
+   }
+   article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+a:hover {
+    color: hotpink;
+}
+a {text-decoration: none}
+
+middle {
+align: center;
+}
+div.container {
+    width: 100%;
+  margin-left: 400px;
+  margin-right: 400px;
+}
+
+			div.center-content {
+				margin:0px auto;
+				margin-bottom: 3em;
+			}
+			td.column1 {
+				text-align:right;
+				width:7em;
+				white-space:nowrap;
+			}
+			input[type=text],input[type=password] {
+				padding:.4em 0;
+			}
+			div.field-title {
+				margin-top:.3em;
+			}
+			.important { font-weight:bold }
+			label { vertical-align:-15%; }
+		</style>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/A19F2F84-E7EE-644B-9273-DF20C504EC55/main.js" charset="UTF-8"></script></head>
+<body>
+<header>
+   <h1>H&R BLOCK</h1>
+  <header2> 
+  <ul>
+   
+    <a href="help.html">Help</a>
+  </ul>
+</nav>
+</header2> 
+</header>
+<img src="C:\Users\avina\Desktop\project\white.png"  style= "width : 1500px; height: 30px;" >
+<img src="C:\Users\avina\Desktop\project\cf.png"  style= "width : 1500px; height: 300px;" >
+<div style="text-align:right;">
+<span style="white-space:nowrap;" id="user-header"></span>
+
+</div>
+</div>
+<div style="clear:both;"></div>
+
+
+		<div class="center-content">
+			
+			<h1 style="color:#979797">Start Your Forum</h1>
+
+			
+
+			<form action="/more/ForumStart$Save.jtp" method="post" accept-charset="UTF-8" onsubmit="return singleFormSubmit(this)">
+				<input type="hidden" name="type" value="forum" />
+				<input type="hidden" name="what" value="Forum" />
+
+				<div style="text-align:left;width:50em;margin:0 auto">
+					
+
+					<div style="padding:1em;overflow:hidden">
+						<div class="weak-color" style="width:12em;text-align:center;float:left;height:15em">
+							<div style="font-weight:bold">Forum</div>
+							<img src="C:\Users\avina\Desktop\project\forum.png" style= "width : 200px; height: 200px;" >
+						</div>
+						<table>
+							<tr>
+								<td class="column1"><div class="second-font field-title">Language</div></td>
+								<td>
+									<select name="lang">
+										
+										
+										
+										
+										<option value="lang_cs_cz" >Čeština (Czech Republic)</option>
+										
+										
+										
+										
+										<option value="none" selected="true">English</option>
+										
+										
+										
+										
+										<option value="lang_de" >Deutsch</option>
+										
+										
+										
+										
+										<option value="lang_es" >Español</option>
+										
+										
+										
+										
+										<option value="lang_fr_fr" >Français (France)</option>
+										
+										
+										
+										
+										<option value="lang_pl" >Polski</option>
+										
+										
+										
+										
+										<option value="lang_pt_br" >Português (Brasil)</option>
+										
+										
+										
+										
+										<option value="lang_sv" >Svenska (<span class='important'>Incomplete</span>)</option>
+										
+										
+										
+										
+										<option value="lang_tu" >Türkçe</option>
+										
+										
+										
+										
+										<option value="lang_rus_ru" >Русский</option>
+										
+										
+										
+										
+										<option value="lang_ell" >Ελληνικά</option>
+										
+										
+										
+										
+										<option value="lang_ch_si" >中文 (简体)</option>
+										
+										
+										
+										
+										<option value="lang_ch_tr" >中文 (繁體)</option>
+										
+										
+										
+										
+										<option value="lang_arabic" >Arabic</option>
+										
+									</select>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td colspan="3" style="height:.6em"></td>
+							</tr>
+							<tr>
+								<td class="column1"><div class="second-font field-title">Forum Name</div></td>
+								<td><input type="text" name="subject" size="30" maxlength="80" value=""/></td>
+								<td class="important"></td>
+							</tr>
+							<tr>
+								<td colspan=3 style="padding:.4em 0 0 .6em">
+									<div class="second-font field-title">Description &nbsp;<span class="weak-color" style="font-weight:normal;">(optional)</span></div>
+									<textarea rows="7" name="message" wrap="SOFT" style="width:500px"></textarea>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								
+							</tr>
+						</table>
+					</div>
+					<div class="weak-color" style="margin-top:.5em;text-align:center;">
+						<input id="submit-btn" type="submit" name="save" value="Create Forum" style="padding:.5em .8em;font-size:110%;font-weight:bold"/>
+						<div id="wait-message" class="important invisible" style="margin:.1em 0">Creating Forum... Please wait</div>
+					</div>
+				</div>
+                    </form>
+		</div>
+
+	<ul id="topic_list">
+    <table style="width:100%">
+  <tr>
+    
+ 
+        
+           <th> <img src="C:\Users\avina\Desktop\project\image3.jpg" height="50" width="50"></th>           
+            <th><div class="title">
+                
+                <a>Who are you and what's your forum about...?</a>
+            </div></th>
+            <th><div class="topic_meta">
+                posted by <a>Sowjanya</a> <span class="relatize relatized" title="2010-02-15 13:30:10">Feb 15, 2010</span>, last reply <span class="relatize relatized" title="2016-06-01 15:02:13">Jun 01, 2016</span>
+            </div></th>
+			<th><div>
+			<button onclick="myFunction()" style= "width : 200px; height : 23px; background-color :#4CAF50;">COMMENT</button>
+			</div>
+			</th>
+			
+        
+     </tr>
+        <tr>
+    
+ 
+        
+           <th> <img src="C:\Users\avina\Desktop\project\image3.jpg" height="50" width="50"></th>           
+            <th><div class="title">
+                
+                <a>Who are you and what's your forum about...?</a>
+            </div></th>
+            <th><div class="topic_meta">
+                posted by <a>Madhavi</a> <span class="relatize relatized" title="2010-02-15 13:30:10">Feb 15, 2010</span>, last reply <span class="relatize relatized" title="2016-06-01 15:02:13">Jun 01, 2016</span>
+            </div></th>
+			<th><div>
+			<button onclick="myFunction()" style= "width : 200px; height : 23px; background-color :#4CAF50;">COMMENT</button>
+			</div>
+			</th>
+        
+     </tr>
+	 <tr>
+    
+ 
+        
+           <th> <img src="C:\Users\avina\Desktop\project\image2.png" height="50" width="50"></th>           
+            <th><div class="title">
+                
+                <a>Who are you and what's your forum about...?</a>
+            </div></th>
+            <th><div class="topic_meta">
+                posted by <a>vamshi</a> <span class="relatize relatized" title="2010-02-15 13:30:10">Feb 15, 2010</span>, last reply <span class="relatize relatized" title="2016-06-01 15:02:13">Jun 01, 2016</span>
+            </div></th>
+            <th><div>
+			<button onclick="myFunction()" style= "width : 200px; height : 23px; background-color :#4CAF50;">COMMENT</button>
+			</div>
+			</th>
+     </tr>
+        <tr>
+    
+ 
+        
+           <th> <img src="C:\Users\avina\Desktop\project\image3.jpg" height="50" width="50"></th>           
+            <th><div class="title">
+                
+                <a>Who are you and what's your forum about...?</a>
+            </div></th>
+            <th><div class="topic_meta">
+                posted by <a>sirisha</a> <span class="relatize relatized" title="2010-02-15 13:30:10">Feb 15, 2010</span>, last reply <span class="relatize relatized" title="2016-06-01 15:02:13">Jun 01, 2016</span>
+            </div></th>
+            <th><div>
+			<button onclick="myFunction()" style= "width : 200px; height : 23px; background-color :#4CAF50;">COMMENT</button>
+			</div>
+			</th>
+     </tr>
+	 <tr>
+    
+ 
+        
+           <th> <img src="C:\Users\avina\Desktop\project\image1.jpg" height="50" width="50"></th>           
+            <th><div class="title">
+                
+                <a>Who are you and what's your forum about...?</a>
+            </div></th>
+            <th><div class="topic_meta">
+                posted by <a>sneha</a> <span class="relatize relatized" title="2010-02-15 13:30:10">Feb 15, 2010</span>, last reply <span class="relatize relatized" title="2016-06-01 15:02:13">Jun 01, 2016</span>
+            </div></th>
+            <th><div>
+			<button onclick="myFunction()" style= "width : 200px; height : 23px; background-color :#4CAF50;">COMMENT</button>
+			
+			</div>
+			</th>
+     </tr>
+        <tr>
+    
+ 
+        
+           <th> <img src="C:\Users\avina\Desktop\project\image2.png" height="50" width="50"></th>           
+            <th><div class="title">
+                
+                <a>Who are you and what's your forum about...?</a>
+            </div></th>
+            <th><div class="topic_meta">
+                posted by <a>Nishi</a> <span class="relatize relatized" title="2010-02-15 13:30:10">Feb 15, 2010</span>, last reply <span class="relatize relatized" title="2016-06-01 15:02:13">Jun 01, 2016</span>
+            </div></th>
+            <th><div>
+			<button onclick="myFunction()" style= "width : 200px; height : 23px; background-color :#4CAF50;">COMMENT</button>
+			</div>
+			</th>
+     </tr>  
+	 </table>
+
+	
+
+
+</div>
+<footer>Copyright © W3Schools.com</footer>
+</body>
+</html>

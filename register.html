@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body{
+align : center;
+
+}
+
+header {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+   }
+footer{
+
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+	text-align: center;
+   }
+
+header2{
+    
+    color: white;
+    background-color: black;
+    clear: left;
+	text-align: right;
+   }
+
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+a:hover {
+    color: hotpink;
+}
+a {text-decoration: none}
+
+middle {
+align: center;
+}
+div.container {
+    width: 100%;
+  margin-left: 400px;
+  margin-right: 400px;
+}
+​
+
+</style>
+
+</head>
+<body link="white">
+<header>
+   <h1>H&R BLOCK</h1>
+  <header2> 
+  <ul>
+   <a href="register.html">Register</a>|
+<a href="sign.html">Sign In</a>|
+    <a href="help.html">Help</a>
+  </ul>
+</nav>
+</header2> 
+</header>
+<img src="C:\Users\avina\Desktop\project\white.png"  style= "width : 1500px; height: 30px;" >
+<img src="C:\Users\avina\Desktop\project\cf.png"  style= "width : 1500px; height: 300px;" >
+
+<div class="container">
+<h1 style = "font-family: 'Comic Sans MS', cursive, sans-serif;"> Create Your Account </h1><br>
+<form name="registration" style="align : center;" method="post"  onsubmit="return formValidation();">
+   <p style ="font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 20px;">Email-Id</p>
+  <input type="text" name="email" style= "width : 200px; height : 20px;">
+  <p style ="font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 20px;">Username</p>
+  <input type="text" name="username" style= "width : 200px; height : 20px;">
+     <p style ="font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 20px;">Password</p>
+  <input type="password" name="passid" style= "width : 200px; height : 20px;">
+     <p style ="font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 20px;">Confirm Password</p>
+  <input type="password" name="conpass"  style= "width : 200px; height : 20px;">
+  <br><br><br>
+   
+  <input id="SUBMIT" type="Submit" value="SUBMIT"  style= "width : 200px; height : 23px; background-color :#4CAF50;"/>
+  <script language="javascript" type="text/javascript">
+function myFunction() {
+   window.location="C:/Users/avina/Desktop/project/sam1.html"
+}
+function formValidation()  
+{  
+ 
+var passid = document.registration.passid;  
+var uname = document.registration.username;  
+var uemail = document.registration.email; 
+var conpass = document.registration.conpass;   
+  
+if(passid_validation(passid,7,12))  
+{  
+if(allLetter(uname))  
+{     
+if(ValidateEmail(uemail))  
+{  
+if(conpass.value==passid.value)
+{
+return myFunction(); 
+} 
+else{
+alert("invalid");   
+}   
+}  
+}    
+return false;  
+} 
+
+
+function passid_validation(passid,mx,my)  
+{  
+var passid_len = passid.value.length;  
+if (passid_len == 0 ||passid_len >= my || passid_len < mx)  
+{  
+alert("Password should not be empty / length be between "+mx+" to "+my);  
+passid.focus();  
+return false;  
+}  
+return true;  
+}  
+
+function allLetter(uname)  
+{   
+var letters = /^[A-Za-z]+$/;  
+if(uname.value.match(letters))  
+{  
+return true;  
+}  
+else  
+{  
+alert("Username must have alphabet characters only");  
+uname.focus();  
+return false;  
+}  
+}
+
+function ValidateEmail(uemail)  
+{  
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;  
+if(uemail.value.match(mailformat))  
+{  
+return true;  
+}  
+else  
+{  
+alert("You have entered an invalid email address!");  
+uemail.focus();  
+return false;  
+}  
+}
+</script>
+  
+</form>
+
+</div><br>
+
+
+<footer>Copyright © W3Schools.com</footer>
+
+
+
+</body>
+</html>
